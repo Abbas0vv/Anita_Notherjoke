@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Anita_Notherjoke.DataAccess.Repositories.Interfaces;
 
-public interface IRepository<T> where T:BaseClass
+public interface IRepository<T> where T : BaseClass
 {
-    DbSet<T> Table { get; }
+    DbSet<T> Table { get; } 
 }
