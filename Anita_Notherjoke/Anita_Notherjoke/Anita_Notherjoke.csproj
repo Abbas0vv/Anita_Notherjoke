@@ -17,8 +17,4 @@
     <ProjectReference Include="..\Anita_Notherjoke.DataAccess\Anita_Notherjoke.DataAccess.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
-
 </Project>

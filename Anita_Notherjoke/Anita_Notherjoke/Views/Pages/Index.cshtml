@@ -4,7 +4,76 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+    </style>
+    <title>Gönderilen E-postalar</title>
+</head>
+<body>
+    <h2>Gönderilen E-postalar</h2>
+    <table>
+        <tr>
+            <th>E-posta Başlığı</th>
+            <th>Gönderildiği E-postalar</th>
+            <th>Sevkiyat Tarihi</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>E-posta 1</td>
+            <td>example@email.com</td>
+            <td>2023-08-27</td>
+            <td><button>Daha Fazla</button></td>
+        </tr>
+        <tr>
+            <td>E-posta 2</td>
+            <td>another@email.com</td>
+            <td>2023-08-28</td>
+            <td><button>Daha Fazla</button></td>
+        </tr>
+        <!-- Diğer gönderilen e-postalar buraya eklenebilir -->
+    </table>
+</body>
+</html>
+
