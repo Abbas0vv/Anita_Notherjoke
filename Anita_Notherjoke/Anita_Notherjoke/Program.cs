@@ -24,6 +24,7 @@ namespace Anita_Notherjoke
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapRazorPages();
