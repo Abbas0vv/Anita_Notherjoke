@@ -1,3 +1,6 @@
+using Anita_Notherjoke.DataAccess.Context;
+using Microsoft.EntityFrameworkCore;
+
 namespace Anita_Notherjoke
 {
     public class Program
@@ -6,28 +9,29 @@ namespace Anita_Notherjoke
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            builder.Services.AddRazorPages();
 
+            //Services
+            builder.Services
+                            .AddDbContext<Anita_NotherjokeDbContext>(o =>
+                            {
+                                var connectionString = "Server=localhost;Port=5432;Database=Pustok;User Id=postgres;Password=postgres;";
+
+                                o.UseNpgsql(connectionString);
+                            });
+
+
+            //app builder
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            if (!app.Environment.IsDevelopment())
-            {
-                app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
 
-            app.UseHttpsRedirection();
+            //Middleware
             app.UseStaticFiles();
 
-            app.UseRouting();
+            app.MapControllerRoute(
 
-            app.UseAuthentication();
-            app.UseAuthorization();
-
-            app.MapRazorPages();
+                name: "default",
+                pattern: "{controller=Dashboard}/{action=Index}/{id?}"
+                );
 
             app.Run();
         }
