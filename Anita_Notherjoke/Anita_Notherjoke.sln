@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anita_Notherjoke", "Anita_Notherjoke\Anita_Notherjoke.csproj", "{F5A326F3-3DCB-48E7-9CF6-D246C8A00EA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anita_Notherjoke", "Anita_Notherjoke\Anita_Notherjoke.csproj", "{F5A326F3-3DCB-48E7-9CF6-D246C8A00EA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anita_Notherjoke.Core", "Anita_Notherjoke.Core\Anita_Notherjoke.Core.csproj", "{E7DF2D28-3C22-4462-9970-E995A422F319}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anita_Notherjoke.Core", "Anita_Notherjoke.Core\Anita_Notherjoke.Core.csproj", "{E7DF2D28-3C22-4462-9970-E995A422F319}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anita_Notherjoke.DataAccess", "Anita_Notherjoke.DataAccess\Anita_Notherjoke.DataAccess.csproj", "{E34BB762-5A6F-4E32-B86C-62B52BD07174}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anita_Notherjoke.DataAccess", "Anita_Notherjoke.DataAccess\Anita_Notherjoke.DataAccess.csproj", "{E34BB762-5A6F-4E32-B86C-62B52BD07174}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
